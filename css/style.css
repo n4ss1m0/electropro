@@ -1,0 +1,373 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "sans-serif";
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3rem;
+}
+
+:root {
+    --main-color: #1bfd9c;
+    --text-color: #fff;
+    --other-color: #212121;
+    --second-color: #9e9e9e;
+    --bg-color: #111;
+    --dec1-color: #33333300;
+
+    --big-font: 4.5rem;
+    --h2-font: 2.6rem;
+    --p-font: 1.1rem;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 30px 8%;
+    transition: all 0.5s ease;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 33px;
+    font-weight: 700;
+}
+
+header img{
+    height: 64px;
+    width: 64px;
+}
+
+.navlist {
+    display: flex;
+}
+
+
+
+.navlist a {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    margin: 0 30px;
+    transition: all 0.5s ease;
+    align-items: center;
+    display: inline;
+}
+
+
+
+.navlist a.active {
+    color: var(--main-color);
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background: var(--main-color);
+    border-radius: 3rem;
+    box-shadow: #1bfd9c 0px 1px 25px;
+}
+
+.nav-icons i {
+    vertical-align: middle;
+    font-size: 25px;
+    color: var(--bg-color);
+    margin-right: 8px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+}
+
+.navlist li ul.dropdown li{
+    display: block;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.navlist li ul.dropdown {
+    width: auto;
+    background: var(--other-color);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
+#menu-icon {
+    font-size: 32px;
+    color: var(--bg-color);
+    z-index: 100001;
+    cursor: pointer;
+    display: none;
+}
+
+.nav-icons i:hover {
+    transform: scale(1.1);
+    color: var(--text-color);
+}
+
+/* home */
+
+section{
+    padding: 30px 14% 20px;
+
+}
+
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+    padding: 20px 14% 30px;
+}
+
+.home-img img {
+    width: 100%;
+    height: auto;
+}
+
+.home-bienvenida h1 {
+    font-size: var(--big-font);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 3rem;
+}
+
+span {
+    color: var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px;
+    background: var(--other-color);
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 2rem;
+    transition: all 0.5 ease;
+}
+
+.btn i {
+    vertical-align: middle;
+    margin-left: 9px;
+    font-size: 22px;
+}
+
+.btn:hover {
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    box-shadow: #1bfd8b 0px 1px 25px;
+}
+
+header.sticky {
+    padding: 12px 8%;
+    background: var(--other-color);
+}
+
+/*redes sociales*/
+
+.redes-sociales {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 14% 30px;
+}
+
+.redes-sociales div i{
+    color: var(--main-color);
+    vertical-align: middle;
+    font-size: 64px;
+}
+
+
+
+/*sobre nosotros*/
+.subtitle-2 {
+    display: block;
+    align-items: center;
+    width: 100%;
+    padding-top: 30;
+    padding-bottom: 20;
+}
+
+.sobre-nos-subtitle {
+    align-items: center;
+    display: block;
+    align-items: center
+}
+
+.sobre-nos-subtitle h2{
+    font-size: var(--h2-font);
+    display: block;
+    line-height: 0.8;
+    margin-bottom: 1.0rem;
+    text-align: center
+}
+
+.sobre-nos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 4rem;
+    
+}
+
+
+.sobre-nos-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+.sobre-nos-text p{
+    font-size: var(--p-font);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+/* ponte en contacto */
+
+.Contact-us a {
+    font-size: 20px;
+    color: var(--main-color);
+    margin-bottom: 0.8rem;
+}
+
+/* tienda */
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.5s;
+}
+
+.item:hover img{
+    transform: scale(1.2);
+}
+
+.item figure {
+    overflow: hidden;
+}
+
+.container-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5%;
+}
+
+.item {
+    border-radius: 10px;
+    background-color: var(--second-color);
+    width: 350px;
+    margin-bottom: 3rem;
+}
+
+.item:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.info-producto {
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.price{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.info-producto a {
+    width: 270px;
+    cursor: pointer;
+}
+
+/* scroll */
+
+.scroll {
+    position: fixed;
+    bottom: 2.2rem;
+    border-top: 2rem;
+    right: 3.2rem;
+}
+
+.scroll i {
+    font-size: 22px;
+    color: var(--text-color);
+    background: var(--main-color);
+    padding: 10px;
+    border-radius: 2rem;
+}
+
+/* footer */
+
+footer {
+    background-color: var(--other-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    height: 200px;
+    align-items: center;
+}
+
+.copyright p{
+    margin-left: 15px;
+}
+
+#sub h3 {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+
+
+
+#redes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+
+.r-redes div {
+    width: 120;
+    align-items: center;
+}
+
+.r-redes div i {
+    color: var(--main-color);
+    font-size: 32px;
+}
