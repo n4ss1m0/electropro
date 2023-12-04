@@ -232,6 +232,14 @@ header.sticky {
     text-align: center
 }
 
+.sobre-nos-subtitle p{
+    font-size: 20px;
+    display: block;
+    line-height: 0.8;
+    margin-bottom: 1.0rem;
+    text-align: center
+}
+
 .sobre-nos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -255,6 +263,15 @@ header.sticky {
     margin-bottom: 2rem;
 }
 
+
+
+
+.parrafos p{
+    font-size: var(--p-font);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
 /* ponte en contacto */
 
 .Contact-us a {
@@ -262,6 +279,8 @@ header.sticky {
     color: var(--main-color);
     margin-bottom: 0.8rem;
 }
+
+
 
 /* tienda */
 
@@ -370,4 +389,22 @@ footer {
 .r-redes div i {
     color: var(--main-color);
     font-size: 32px;
+}
+
+/*construyamos algo */
+
+.Constr-algo h1 {
+    font-size: var(--big-font);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 8rem;
+}
+
+.construyamos{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    align-items: center;
+    padding: 20px 14% 30px;
 }
