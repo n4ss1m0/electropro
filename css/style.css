@@ -308,13 +308,14 @@ header.sticky {
 
 .item {
     border-radius: 10px;
-    background-color: var(--second-color);
+    background-color: var(--bg-color);
     width: 350px;
     margin-bottom: 3rem;
 }
 
 .item:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    box-shadow: 0 10px 20px rgba(128, 247, 128, 0.2);
+    background-color: #171717;
 }
 
 .info-producto {
