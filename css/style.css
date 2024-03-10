@@ -410,11 +410,13 @@ footer {
     padding: 20px 14% 30px;
 }
 
-#Apps-titulo{
+/*Apps*/
+
+.Apps-titulo{
     text-align: center;
 }
 
-#containerCapturas{
+.containerCapturas{
     display: flex;
     width: 100%;
     align-items: center;
@@ -422,29 +424,29 @@ footer {
     height: auto;
 }
 
-#capturasPropiety{
+.capturasPropiety{
     width: 225px;
     height: 500px;
     padding: 0px;
 }
 
-#Fila100{
+.Fila100{
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#Apps-parrafos{
+.Apps-parrafos{
     font-size: 1.2rem;
 }
 
-#Apps-parrafos a{
+.Apps-parrafos a{
     color: var(--main-color);
 }
 
 
 
-#ContainerTexto{
+.ContainerTexto{
     width: 50%;
     display: flex;
     justify-content: center;
