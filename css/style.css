@@ -409,3 +409,44 @@ footer {
     align-items: center;
     padding: 20px 14% 30px;
 }
+
+#Apps-titulo{
+    text-align: center;
+}
+
+#containerCapturas{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+}
+
+#capturasPropiety{
+    width: 225px;
+    height: 500px;
+    padding: 0px;
+}
+
+#Fila100{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#Apps-parrafos{
+    font-size: 1.2rem;
+}
+
+#Apps-parrafos a{
+    color: var(--main-color);
+}
+
+
+
+#ContainerTexto{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
