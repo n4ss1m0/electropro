@@ -490,3 +490,16 @@ footer {
     width: 350px;
     height: 300px;
 }
+
+.containerGaleria{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    height: auto;
+}
+
+.capturasGaleria{
+    height: 400px;
+    width: 600px;
+}
